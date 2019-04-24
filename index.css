@@ -1,4 +1,8 @@
-.form,
+body {
+  color: #34495e;
+}
+
+.greeting__form,
 .greetings {
   display: none;
 }
