@@ -1,6 +1,8 @@
 const API_KEY = "097c13ae2dfc5420426557ca82d73f41";
 const COORDS = "coords";
 
+function getWeather
+
 function saveCoords(coordsObj) {
   localStorage.setItem(COORDS, JSON.stringify(coordsObj));
 }
