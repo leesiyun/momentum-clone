@@ -1,0 +1,51 @@
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 32vh auto;
+}
+
+.clock {
+  font-size: 1000%;
+  font-weight: 500;
+}
+
+.greeting,
+.greeting__form {
+  display: none;
+}
+
+.greeting-column {
+  margin: 20px 0px 45px 0px;
+}
+
+.greeting-column input {
+  font-size: 33px;
+}
+
+.greeting__form input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.greetings {
+  font-size: 33px;
+}
+
+.toDo-column li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.toDo-column i {
+  margin-right: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.toDo__form input::placeholder {
+  color: white;
+}

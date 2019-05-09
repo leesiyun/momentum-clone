@@ -1,22 +1,26 @@
-const body = document.querySelector("body");
+$(document).ready(function() {
+  "use strict";
 
-const IMG_NUMBER = 5;
+  const body = document.querySelector("body");
 
-function paintImage(imgNumber) {
-  const image = new Image();
-  image.src = `/images/${imgNumber + 1}.jpg`;
-  image.classList.add("bgImage");
-  body.appendChild(image);
-}
+  const IMG_NUMBER = 4;
 
-function genRandom() {
-  const number = Math.floor(Math.random() * IMG_NUMBER);
-  return number;
-}
+  function paintImage(imgNumber) {
+    const image = new Image();
+    image.src = `/images/${imgNumber + 1}.jpg`;
+    image.classList.add("bgImage");
+    body.appendChild(image);
+  }
 
-function init() {
-  const randomNumber = genRandom();
-  paintImage(randomNumber);
-}
+  function genRandom() {
+    const number = Math.floor(Math.random() * IMG_NUMBER);
+    return number;
+  }
 
-init();
+  function init() {
+    const randomNumber = genRandom();
+    paintImage(randomNumber);
+  }
+
+  init();
+});

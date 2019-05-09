@@ -4,22 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Momentum Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
+    <header class="header">
+      <div class="header__header-column">
+        <a href="https://leesiyun.github.io/kakao-clone/" target="blank">
+          <i class="far fa-comments"></i>
+          <span class="header__icon-title">siyuntalk</span>
+        </a>
+      </div>
+      <div class="header__header-column">
+        <span class="js-weather"></span>
+      </div>
+    </header>
+    <section class="center">
+      <div class="js-clock clock">
+        <span class="clock__text">00:00</span>
+      </div>
+      <div class="greeting-column">
+      <form class="js-greeting__form greeting__form">
+        <input type="text" placeholder="what's your name?" />
+      </form>
+      <span class="js-greetings greetings"></span>
     </div>
-    <form class="js-greeting__form greeting__form">
-      <input type="text" placeholder="What is your name?" />
+    <div class="toDo-column">
+      <form class="js-toDo__form toDo__form">
+        <input type="text" placeholder="Write a to do" />
+      </form>
     </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDo__form">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDo__list"></ul>
-    <span class="js-weather"></span>
+      <ul class="js-toDo__list toDO__list"></ul>
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
     <script src="js/todo.js"></script>

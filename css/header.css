@@ -1,0 +1,13 @@
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ß .header i {
+  font-size: 20px;
+}
+
+.header__icon-title {
+  font-size: 13px;
+}
