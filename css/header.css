@@ -4,10 +4,19 @@
   justify-content: space-between;
   align-items: center;
 }
-ß .header i {
+.header i {
   font-size: 20px;
 }
 
 .header__icon-title {
   font-size: 13px;
+}
+
+.header .weather__temperature {
+  font-size: 18px;
+}
+
+.header .weather__place {
+  font-size: 15px;
+  font-style: italic;
 }

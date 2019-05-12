@@ -2,12 +2,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  margin: 32vh auto;
+  margin: 30vh 5vw;
 }
 
 .clock {
-  font-size: 1000%;
+  font-size: 23vmin;
   font-weight: 500;
 }
 
@@ -17,11 +16,11 @@
 }
 
 .greeting-column {
-  margin: 20px 0px 45px 0px;
+  margin: 23px 0px 45px 0px;
 }
 
 .greeting-column input {
-  font-size: 33px;
+  font-size: 3.8vh;
 }
 
 .greeting__form input::placeholder {
@@ -30,11 +29,11 @@
 }
 
 .greetings {
-  font-size: 33px;
+  font-size: 4vh;
 }
 
 .toDo-column li {
-  font-size: 18px;
+  font-size: 2.5vh;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
