@@ -2,6 +2,7 @@
 @import "header.css";
 @import "center.css";
 @import "reset.css";
+@import "menu.css";
 
 body {
   overflow: hidden;
@@ -54,6 +55,7 @@ input {
   border: 0;
   font-size: 22px;
   border-bottom: 3px solid white;
+  font-family: "Montserrat", sans-serif;
 }
 
 input:focus,

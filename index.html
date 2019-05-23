@@ -14,13 +14,34 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__header-column">
-        <a href="https://leesiyun.github.io/kakao-clone/" target="blank">
-          <i class="far fa-comments"></i>
-          <span class="header__icon-title">syuntalk</span>
-        </a>
-      </div>
+          <div class="menu">
+              <i class="fas fa-bars"></i>
+              <ul class="list hidden">
+                <li class="list__content">
+                    <a href="https://github.com/leesiyun" target="blank">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                </li>
+                <li class="list__content">
+                    <a href="https://leesiyun.github.io/kakao-clone/" target="blank">
+                      <i class="fas fa-comments"></i>
+                  <span>LeeSyunTalkTalk</span>
+                  </a>
+                </li>
+                <li class="list__content">
+                    <a href="https://leesiyun.github.io/paint-javascript/" target="blank">
+                  <i class="fas fa-paint-brush"></i>
+                  <span>SiKetchbook</span>
+                  </a>
+                </li>
+                <li class="list__content">
+                  <i class="fas fa-question"></i>
+                  <span>WhatNext</span>
+                </li>
+              </ul>
+            </div>
+            <header class="header">
       <div class="header__header-column">
         <span class="js-weather__temperature weather__temperature"></span>
         <span class="js-weather__place weather__place"></span>
@@ -32,7 +53,7 @@
       </div>
       <div class="greeting-column">
       <form class="js-greeting__form greeting__form">
-        <input type="text" placeholder="what's your name?" />
+        <input type="text" placeholder="What's your name?" />
       </form>
       <span class="js-greetings greetings"></span>
     </div>
@@ -45,6 +66,7 @@
     </div>
     </section>
     <script src="js/bg.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
     <script src="js/todo.js"></script>

@@ -1,0 +1,79 @@
+.menu,
+.menu:before {
+  position: absolute;
+  top: 8px;
+  left: 3px;
+}
+.menu:before,
+.list__content:before {
+  font-feature-settings: "liga";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu {
+  height: 35px;
+  width: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  opacity: 0.7;
+  background: inherit;
+  padding: 0.5em 0;
+  margin: 10px;
+  border-radius: 5px;
+  background: #2c2c2c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: inherit;
+  font-size: 15px;
+  white-space: nowrap;
+  cursor: default;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.list.hidden {
+  margin-top: 0.7em;
+  visibility: hidden;
+  opacity: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.list:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: inherit;
+  position: absolute;
+  top: -5px;
+  left: 11px;
+  transform: rotate(45deg);
+}
+.list__content {
+  list-style: none;
+  padding: 5px 10px;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.list__content i {
+  padding-right: 5px;
+  font-size: 18px;
+}
+
+.list__content .fa-question {
+  padding-right: 9px;
+}
+
+.list__content:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
